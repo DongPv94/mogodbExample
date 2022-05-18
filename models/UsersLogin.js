@@ -31,9 +31,9 @@ UserLoginSchema.pre("save", async function save(next) {
   }
 });
 
-UserLoginSchema.methods.validatePassword = async function validatePassword(data) {
-  return bcrypt.compare(data, this.password);
-};
+// UserLoginSchema.methods.validatePassword = async function validatePassword(data) {
+//   return bcrypt.compare(data, this.password);
+// };
 
 const UserLoginListItem = model("userLogin", UserLoginSchema);
 module.exports = UserLoginListItem;
