@@ -1,2 +1,0 @@
-# mogodbExample
-mogodb Example
